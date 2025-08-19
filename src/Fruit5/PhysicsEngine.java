@@ -1,6 +1,7 @@
 package Fruit5;
 
 //碰撞、墜落物理計算
+//待加限速
 class PhysicsEngine {
 
 	public void updateFruits(java.util.List<Fruit> fruits) {
@@ -31,7 +32,7 @@ class PhysicsEngine {
 				fruit.setVy(0);
 		}
 
-		// 左右邊界碰撞!!
+		// 左右邊界碰撞
 		if (fruit.getX() - fruit.getRadius() < GameConfig.GLASS_XL) {
 			fruit.setX(GameConfig.GLASS_XL + fruit.getRadius());
 			fruit.setVx(fruit.getVx() * -GameConfig.BOUNCE_DAMPING);

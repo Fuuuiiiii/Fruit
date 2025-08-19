@@ -32,7 +32,7 @@ class Fruit {
         double dx = other.x - this.x;
         double dy = other.y - this.y;
         double distance = Math.sqrt(dx * dx + dy * dy);
-        return distance < (this.getRadius() + other.getRadius());
+        return distance < (this.getRadius() + other.getRadius()); //如果兩者距離很小就滿足合成條件
     }
     
     public double getDistanceTo(Fruit other) {      

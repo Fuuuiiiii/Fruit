@@ -27,31 +27,29 @@ class GameConfig {
 	public static final Font HINT_FONT = new Font("微軟正黑體", Font.PLAIN, 20);
 }
 
-// 水果類型枚舉 
-enum FruitType {
-	CHERRY(18, new Color(220, 20, 60), 10, "藍莓", "0.png"), 
-	GRAPE(28, new Color(255, 105, 180), 20, "葡萄", "1.png"),
-	KIWI(32, new Color(128, 0, 128), 30, "奇異果", "2.png"), 
-	SMALLORANGE(47, new Color(255, 255, 0), 40, "柳丁", "3.png"),
-	LEMON(50, new Color(255, 165, 0), 50, "檸檬", "4.png"), 
-	ORANGE(60, new Color(255, 0, 0), 60, "橘子", "6.png"),
-	TOMATO(70, new Color(154, 205, 50), 80, "番茄", "fruit6.png"),
-	PEACH(80, new Color(255, 218, 185), 100, "桃子", "fruit7.png"),
-	PINEAPPLE(90, new Color(255, 215, 0), 150, "鳳梨", "fruit8.png"),
-	COCONUT(105, new Color(139, 69, 19), 200, "椰子", "fruit9.png"), 
-	WATERMELON(120, new Color(50, 205, 50), 300, "西瓜", "8.png");
+// 水果類型，class要寫很多個
+enum FruitType { 
+	CHERRY(18, new Color(220, 20, 60), 10, "0.png"), 
+	GRAPE(28, new Color(255, 105, 180), 20,  "1.png"),
+	KIWI(32, new Color(128, 0, 128), 30,  "2.png"), 
+	SMALLORANGE(47, new Color(255, 255, 0), 40,  "3.png"),
+	LEMON(50, new Color(255, 165, 0), 50,  "4.png"), 
+	ORANGE(60, new Color(255, 0, 0), 60,  "6.png"),
+	TOMATO(70, new Color(154, 205, 50), 80,  "fruit6.png"),
+	PEACH(80, new Color(255, 218, 185), 100,  "fruit7.png"),
+	PINEAPPLE(90, new Color(255, 215, 0), 150,  "fruit8.png"),
+	COCONUT(105, new Color(139, 69, 19), 200,  "fruit9.png"), 
+	WATERMELON(120, new Color(50, 205, 50), 300,  "8.png");
 
 	public final int radius;
 	public final Color color;
 	public final int score;
-	public final String name;
 	public final String imagepath;
 
-	FruitType(int radius, Color color, int score, String name, String imagepath) {
+	FruitType(int radius, Color color, int score, String imagepath) {
 		this.radius = radius;
 		this.color = color;
 		this.score = score;
-		this.name = name;
 		this.imagepath = imagepath;
 	}
 

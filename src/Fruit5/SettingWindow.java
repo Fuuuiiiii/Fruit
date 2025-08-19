@@ -14,6 +14,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+//遊戲設定音樂音效畫面，待導入
 public class SettingWindow extends JFrame {
 	private Image image;
 

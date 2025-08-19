@@ -2,7 +2,7 @@ package Fruit5;
 
 import java.awt.event.*;
 
-//滑鼠及遊戲狀態的互動關係
+//遊戲事件
 class GameController {
     private GameEngine gameEngine;
     private GameState gameState;

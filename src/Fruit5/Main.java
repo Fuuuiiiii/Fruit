@@ -4,13 +4,12 @@ import java.awt.CardLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
+//import javax.swing.SwingUtilities;
 
 //畫面管控，主程式進入點
 public class Main {
-
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(() -> {
+//		SwingUtilities.invokeLater(() -> {  //執行緒安全問題，不用用
 			JFrame frame = new JFrame("果果樂工坊");
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.setSize(GameConfig.WINDOW_WIDTH, GameConfig.WINDOW_HEIGHT);
@@ -30,6 +29,6 @@ public class Main {
 			frame.setResizable(false);
 			frame.setLocationRelativeTo(null);
 			frame.setVisible(true);
-		});
+//		});
 	}
 }

@@ -11,7 +11,9 @@ import java.io.File;
 
 import javax.imageio.ImageIO;
 
-//遊戲畫面繪製
+//都是畫面，只在一個地方用，所以放一起好找
+//其他畫面繪製放在watermelongame
+
 class GameRenderer {
 	private FruitRenderer fruitRenderer;
 	private UIRenderer uiRenderer;
